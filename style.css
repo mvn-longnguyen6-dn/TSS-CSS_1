@@ -1,0 +1,96 @@
+/* dùng chung (common)  */
+
+/* Universal Selector */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family:  Helvetica,Arial, sans-serif;
+}
+#nav{
+    display: inline-block;
+    background-color: aquamarine;
+    width: 100%;
+ }
+ #nav li {
+    position: relative;
+    
+}
+ #nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+    padding: 0 24px;
+    color:#000;
+    }
+    #nav > li {
+        display: inline-block;
+        }
+    #nav > li > a {
+        color: #000;
+        text-decoration: none;
+        padding: 0 24px;
+        line-height: 46px; 
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    #nav li:hover .subnav {
+        display: block;
+    }
+    #nav .subnav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: aquamarine;
+        min-width: 160px;
+        /* box-shadow: 2px rgb(0 0 0 / 20%); */
+    }#nav .subnav li {
+        display: block;
+    }
+    #nav .subnav a {
+        color: #000;
+        padding: 0 25px;
+        line-height: 38px;
+      
+        }
+    #nav .subnav li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        line-height: 22px;
+        padding: 8px 16px;
+    }
+
+    /* Pseudo-Class */
+    #nav .subnav li:hover a,
+    #nav > li:hover > a {
+    color: #000;
+    background-color: rgb(255, 106, 106);
+    display: block;
+    }
+    #nav .nav-arrow-down{
+        font-size: 12px;
+        }
+    /* attribute = "values"     */
+    
+    a[target=_blank]  {
+        background-color: rgb(176, 196, 181);
+        margin-left: 20px;
+      }
+      p{
+        margin-left: 20px;
+
+      }
+ h2 {
+     text-align: center;
+     margin: 10px;
+ }     
+ p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+  }
+ 
